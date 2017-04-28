@@ -25,3 +25,21 @@
 .list-group-item:hover {
   background-color: #eeeeee;
 }
+
+td, th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+svg {
+  height: 150px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  width: 250px;
+  height: 200px;
+}
