@@ -43,3 +43,7 @@ td:first-of-type, td:first-of-type > div {
   width: 250px;
   height: 200px;
 }
+
+form a {
+  margin-left: 5px;
+}
