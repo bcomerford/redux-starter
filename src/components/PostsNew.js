@@ -23,8 +23,9 @@ class PostsNew extends Component {
   }
   
   onSubmit(values) {
-    console.log(values);
-    this.props.createPost(values);
+    this.props.createPost(values, () => {
+      this.props.history.push('/');
+    });
   }
   
   render() {
@@ -50,7 +51,7 @@ class PostsNew extends Component {
           type='text'
         />
         <button className='btn btn-primary' type='submit'>Submit</button>
-        <Link to='/' className='btn btn-danger' st>Cancel</Link>
+        <Link to='/' className='btn btn-danger'>Cancel</Link>
       </form>
     );
   }
